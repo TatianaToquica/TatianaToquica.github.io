@@ -1,0 +1,70 @@
+.container{
+  margin: auto;
+  background-color: white;
+  width: 90%;
+  padding: 25px;
+  text-align: center;
+}
+
+ul li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+ul.slider{
+  position: relative;
+  width: 400px; /*800*/
+  height: 380px; /*300*/
+}
+
+.slider li {
+    position: absolute;
+    opacity: 0;
+    width: inherit;
+    height: inherit;
+    transition: opacity .5s;
+    background:white;
+}
+
+
+.slider li img {
+  width: 150%;
+  height: 420px;
+  object-fit: cover;
+  line-height: 400px;
+  padding-left: 160px;   
+}
+.slider p{
+	padding-left: 160px;
+	text-align: left;	
+}
+
+.slider li:first-child p{
+    opacity: 1; /*Mostramos el primer <li>*/
+}
+
+ul.slider li:target{
+	opacity: 1;
+}
+.menu{
+  text-align: center;
+  margin: 70px;
+}
+
+.menu li{
+  display: inline-block;
+  text-align: center;
+}
+
+.menu li a{
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  background-color: grey;
+  padding: 10px;
+  width: 20px;
+  height: 20px;
+  font-size: 20px;
+  border-radius: 100%;
+}
